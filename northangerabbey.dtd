@@ -1,0 +1,26 @@
+<!ELEMENT text (#PCDATA|header|p|poem|stanza|text)*>
+<!ELEMENT div (#PCDATA|header|p|poem|stanza)*> 
+<!ATTLIST div 
+    part CDATA #REQUIRED 
+    type (chapter|introduction|conclusion|appendix) #REQUIRED
+    n CDATA #IMPLIED>
+
+<!ELEMENT header (#PCDATA)>
+<!ATTLIST header type (title|chaptertitle|chapternumber|partnumber|parttitle) #REQUIRED>
+
+<!ELEMENT stanza (#PCDATA)>
+
+<!ELEMENT p (#PCDATA|title|emph|stanza|verse|q|foreign)*>
+<!ELEMENT emph (#PCDATA)>
+<!ELEMENT foreign (#PCDATA)>
+<!ELEMENT q (#PCDATA)>
+<!ATTLIST q type (so_called|quotation|title|speech) #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT verse (#PCDATA|stanza)*>
+
+<!ELEMENT poem (#PCDATA|stanza|l)*>
+<!ELEMENT stanza (#PCDATA)>
+<!ELEMENT l (#PCDATA)>
+<!ELEMENT q (#PCDATA)>
+<!ATTLIST q type (so_called|quotation|title) #REQUIRED>
