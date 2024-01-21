@@ -6,7 +6,7 @@
     n CDATA #IMPLIED>
 
 <!ELEMENT header (#PCDATA)>
-<!ATTLIST header type (title|chaptertitle|chapternumber|partnumber|parttitle) #REQUIRED>
+<!ATTLIST header type (title|chapter|partnumber|parttitle) #REQUIRED>
 
 <!ELEMENT stanza (#PCDATA)>
 
